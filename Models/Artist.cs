@@ -21,7 +21,5 @@ namespace EverestAlbumLibrary.Models
         public string Email { get; set; }
         [Required]
         public string PhoneNmber { get; set; }
-        [Required]
-        public virtual IEnumerable<Album> Albums { get; set; }
     }
 }

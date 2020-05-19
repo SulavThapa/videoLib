@@ -7,7 +7,7 @@
 
     <ul class="nav navbar-nav ml-auto">
         <div class="btn-group" role="group">
-            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Datas
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -25,10 +25,10 @@
         <li class="nav-item mx-1">
             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                 <button type="button" class="btn">
-                    @Html.ActionLink(User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+                    @Html.ActionLink(User.Identity.GetUserName() + "", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
                 </button>
-                <button type="button" class="btn">
-                    <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+                <button type="button" class="btn btn-outline-secondary" onclick="javascript:document.getElementById('logoutForm').submit()">
+                    Sign Out
                 </button>
             </div>
     </ul>

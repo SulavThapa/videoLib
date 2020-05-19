@@ -23,7 +23,5 @@ namespace EverestAlbumLibrary.Models
         public HttpPostedFile CoverImage { get; set; }
         public string CoverImagePath { get; set; }
         public string StudioName { get; set; }
-        [Required]
-        public virtual IEnumerable<Artist> Artists { get; set; }
+ }
     }
-}
